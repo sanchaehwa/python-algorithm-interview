@@ -1,4 +1,4 @@
-# Python_Algorithm Study
+## Python Algorithm Study
 
 > 알고리즘 개념 정리 [파이썬 알고리즘 인터뷰](https://product.kyobobook.co.kr/detail/S000001932748) 책으로 진행
 
