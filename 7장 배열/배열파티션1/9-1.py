@@ -1,4 +1,3 @@
-# 오른차순으로 
 class Solution():
     def arrayPairSum(self,nums:list[int])->int:
         sum = 0
@@ -7,7 +6,6 @@ class Solution():
         #nums.sort()
         #내림차순 정렬
         nums.sort(reverse=True)
-        print(nums)
         for i in nums:
             pair.append(i)
             if len(pair) == 2:
