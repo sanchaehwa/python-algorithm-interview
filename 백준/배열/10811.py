@@ -7,13 +7,7 @@ def solution(n:int,m:int)->list:
         temp.reverse()
         basket[i-1:j] = temp
     for x in range(n):
-        print(basket[x],end="") #한줄에 여러 숫자를 출력할수있음
-
-        
-
-
-
-
+        print(basket[x],end=" ") #한줄에 여러 숫자를 출력할수있음
 
 n,m = map(int,input().split())
 #한줄에 여러개,그런걸 n줄 입력 받을때
