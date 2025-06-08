@@ -12,7 +12,6 @@ class Solution():
         while fast and fast.next:
             fast = fast.next.next #두칸이동
             rev, rev_next, slow = slow, rev, slow.next #한칸이동
-            rev.next = rev_next
         if fast:
             slow = slow.next
         while rev and rev.val == slow.val:
