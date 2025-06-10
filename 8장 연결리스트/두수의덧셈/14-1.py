@@ -4,13 +4,13 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def reverseList(self, head1: ListNode, head2: ListNode) -> None:
+        def reverseList(self, head1: ListNode, head2: ListNode) -> None:
         # 역순 변환 함수
-        def reverse(node: ListNode, prev: ListNode = None):
-            if not node:
-                return prev
-            next, node.next = node.next, prev
-            return reverse(next, node)
+            def reverse(node: ListNode, prev: ListNode = None):
+                if not node:
+                    return prev
+                next, node.next = node.next, prev
+                return reverse(next, node)
 
         # 연결리스트 -> 리스트
         def toList(node: ListNode):
