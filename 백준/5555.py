@@ -6,9 +6,6 @@ class Solution:
         for i in rings:
             if target in i:
                 cnt += 1
-        print(cnt)
-
-
 
 target = input()
 n = int(input())

@@ -8,7 +8,7 @@ class Solution:
             for j in range(0,len(word)-1):
                 if word[j] == word[j+1]:#그룹 단어
                     pass
-                elif word[j] in word[j+1:]:
+                elif word[j] in word[j+1:]:#그룹 단어가 뒤에도 있는경우
                     cnt -=1
                     break
         print(cnt)

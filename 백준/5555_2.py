@@ -4,10 +4,9 @@ class Solution:
         cnt = 0 #반지 개수
         for _ in range(int(input())):
             ring = input() 
-            for i in range(len(ring)):
+            for _ in range(len(ring)):
                 ring = ring[1:] + ring[0]
-                print(ring[1:])
-                if ring.find(s) >= 0:
+                if ring.find(s) >= 0: #find 위치를 찾는 함수
                     cnt += 1
         print(cnt)
 solution = Solution()
