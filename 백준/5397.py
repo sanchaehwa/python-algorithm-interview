@@ -28,11 +28,12 @@ class Key:
     
     #왼쪽 이동
     def moveLeft(self):
-        if self.cursor.prev:
+        if self.cursor.prev :
             self.cursor = self.cursor.prev
+
     #오른쪽 이동
     def moveRight(self):
-        if self.cursor.next:
+        if self.cursor.next and self.cursor.next != None:
             self.cursor = self.cursor.next
     #백스페이스 , 삭제
     def delete(self):

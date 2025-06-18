@@ -73,15 +73,6 @@ class Solution:
             elif command == "P": #왼쪽에 데이터 삽입
                 editor.insert(s[1])
         print(editor.printResult())
-def toLinkedList(arr:list)->DoublyListNode:
-    head = DoublyListNode()
-    curr = head
-    for val in arr:
-        newNode = DoublyListNode(val)
-        curr.next = newNode 
-        newNode.prev = curr #이전 노드
-        curr = newNode
-    return head.next #첫번째 노드 반환
 
 solution = Solution()
 solution.editor()
