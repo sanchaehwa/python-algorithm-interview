@@ -8,7 +8,7 @@ def checkpwd(word:str)->bool:
 				return False
 		#조건2: 모음이 3개 혹은 자음이 3개 오면 안됨
 		count = 1
-		if (word[i] in volums) == (word[i-1] in volums)):
+		if (word[i] in volums) == (word[i-1] in volums):
 			count += 1
 			if(count >= 3):
 				return False 

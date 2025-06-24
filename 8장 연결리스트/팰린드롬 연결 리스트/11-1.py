@@ -7,7 +7,7 @@ class ListNode:
         self.val = val
         self.next = next
 class Solution:
-    def isPalindrome(self, head: ListNode)->bool:
+    def isindromPale(self, head: ListNode)->bool:
         #정적 타입 힌트를 사용
         q : Deque[int] = deque()
         if not head:

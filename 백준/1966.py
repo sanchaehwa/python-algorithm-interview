@@ -11,7 +11,7 @@ class Solution:
             q = deque((i,p) for i ,p in enumerate(paper))
             order = 0
             while q:
-                max_priority = max(p for _, p in q)
+                max_priority = max(p for _, p in q) #중요도만 뽑아오려고 - 
                 if q[0][1] == max_priority:
                     order += 1
                     idx, _ = q.popleft()
@@ -19,6 +19,6 @@ class Solution:
                         print(order)
                         break
                 else:
-                    q.rotate(-1)
+                    q.rotate(-1) #뒤로 보냄 : deque의 rotate
 solution = Solution()
 solution.printer()
