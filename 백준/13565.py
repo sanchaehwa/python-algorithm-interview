@@ -1,4 +1,6 @@
 import sys
+sys.setrecursionlimit(10**6)  
+
 def dfs(x,y):
     visited[x][y] = True
     #상하좌우 탐색

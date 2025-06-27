@@ -5,14 +5,14 @@ class Solution:
     def iCanDoIt(self) -> int:
         precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '(': 0}
         ops = set('+-*/')
-        
+        #식 입력받고
         expression = sys.stdin.readline().strip().replace(' ', '')
         if not expression:
             print("ROCK")
             return
-
+        #정수 및 연산자, 괄호로 토큰 분리
         tokens = re.findall(r'\d+|[()+\-*/]', expression)
-
+        #토큰 확인
         if tokens[0] in ops or tokens[-1] in ops:
             print("ROCK")
             return
@@ -68,7 +68,7 @@ class Solution:
                 b = stack2.pop()
                 a = stack2.pop()
                 if token == '+':
-                    stack2.append(a + b)
+                    stack2.appegind(a + b)
                 elif token == '-':
                     stack2.append(a - b)
                 elif token == '*':
