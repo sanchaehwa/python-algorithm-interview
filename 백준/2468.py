@@ -1,4 +1,6 @@
 import sys
+sys.setrecursionlimit(1000000)
+
 def dfs(x,y):
     visited[x][y]=True
     cnt = 0
@@ -11,11 +13,14 @@ def dfs(x,y):
             if rain[dx][dy] == 0 and not visited[dx][dy]:
                 dfs(dx,dy)
 
-
-
 #행 과 영의 개수를 나타내는 N
 
 N = int(sys.stdin.readline())
+#아무것도 입력하지않는 경우
+if N == 0:
+    print(0)
+    exit()
+
 graph = [list(map(int,sys.stdin.readline().split())) for _ in range(N)]
 max_rain = max(map(max,graph))
 #안전영역 list

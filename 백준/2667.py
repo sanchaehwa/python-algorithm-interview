@@ -1,10 +1,11 @@
 import sys
+sys.setrecursionlimit(10**6)  # 재귀 한도 설정
 
 def dfs(x,y):
     visited[x][y] = True
     dx = [1,-1,0,0]
     dy = [0,0,1,-1]
-    count = 1
+    count = 1 #자기 자신도 포함
     for i in range(4):
         nx,ny = dx[i] + x,dy[i] + y
         if 0 <= nx < N and 0 <= ny < N:
