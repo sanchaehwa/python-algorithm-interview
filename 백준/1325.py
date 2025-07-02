@@ -34,18 +34,21 @@ def bfs(start):
     queue = deque([start])
     visited = [0] * (N+1)
     visited[start] = 1 #자기 자신은 방문 표시
-   # print(queue)
     count = 1 #자기 자신
 
     while queue:
         v = queue.popleft()
-        count += 1
+
+        # print(v)
         for i in graph[v]:
+            #print(i)
             if not visited[i]:
                 queue.append(i)
                 visited[i] = 1
-    return count
+            count += 1
 
+    return count
+#N : 컴퓨터 수, M: 관계수
 N,M = map(int,input().split())
 #연결 정보 저장 리스트
 graph = [[] for _ in range(N+1)]
@@ -60,7 +63,7 @@ connections = [0] * (N+1)
 for i in range(1, N+1):
     connections[i] = bfs(i)
 
-#print(connections)
+print(connections)
 
 max_count = max(connections)
 answer = [i for i in range(1, N+1) if connections[i] == max_count]
