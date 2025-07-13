@@ -14,11 +14,10 @@ def bfs(k):
     q = deque()
     q.append(k)
     visited1[k] = 1
-
     while q:
         j = q.popleft()
         lst2.append(j)
-        for i in sorted(graph[j]):
+        for i in sorted(graph[j]):          
             if visited1[i] == 0:
                 q.append(i)
                 visited1[i] = 1 
