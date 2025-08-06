@@ -17,3 +17,4 @@ def recur(start,depth):
             chk[i] = False
             rs.pop()
 recur(1,0)
+
