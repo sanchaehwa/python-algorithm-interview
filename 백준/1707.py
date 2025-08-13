@@ -1,4 +1,6 @@
 import sys
+sys.setrecursionlimit(10**6)
+
 input = sys.stdin.readline
 #color = 0
 def dfs(node):
@@ -10,8 +12,6 @@ def dfs(node):
         elif color[i] == color[node]: #방문한경우를 방문한 경우 - 이분그래프
             global is_bipartite
             is_bipartite = False
-        
-
 
 #테스트 케이스
 N = int(input())

@@ -22,7 +22,7 @@ def bfs(y, x):
                 if graph[ey][ex] == 1:
                     # 아직 안 갔거나 더 적은 비용으로 갈 수 있다면
                     if visited[ey][ex] == -1 or visited[ey][ex] > visited[iy][ix]:
-                        print(visited[ey][ex])
+                       # print(visited[ey][ex])
                         visited[ey][ex] = visited[iy][ix]  # 비용 유지
                         q.appendleft((ey, ex))  # 우선 탐색
                 # 검은 방일 경우 (비용 1 증가)

@@ -27,5 +27,4 @@ answer = 0
 for y in range(N):
     for x in range(N):
         answer = max(answer,dfs(y,x))
-        print(dfs(y,x))
 print(answer)

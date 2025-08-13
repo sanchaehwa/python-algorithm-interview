@@ -4,10 +4,10 @@ input = sys.stdin.readline
 
 word = list(input().strip())
 target = "quack"
-duck_states = []
+duck_states = [] #상태코드 
 
 #1. q부터 시작해야하고 -- quack 를 만들수 있는가? -- 만들수있다 하면 
-max_ducks = 0
+max_ducks = 0 #오리수
 for w in word:
     placed = False
     for i in range(len(duck_states)):

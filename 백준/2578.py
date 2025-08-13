@@ -20,5 +20,11 @@ def count_bingo(board):
             bingo += 1
     for col in zip(*board):
         #list
-        print(col)
+        if list(col).count(0) == 5:
+            bingo += 1
+    if all(board[i][i] == 0 for i range(5)):
+        bingo += 1
+    if all(board[i][4-i] == 0 for i in range(5)):
+        bingo += 1
+    return bingo 
 
